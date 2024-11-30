@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color:black; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo img {
+    height: 50px; 
+}
+.navbar {
+    display: flex;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.book-now a {
+    background-color: #f04c34;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.banner {
+    background-color: #333;
+    text-align: center;
+    padding: 60px 0;
+    color: white;
+    font-size: 2.5rem;
+}
+.image-gallery {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.main-image img {
+    width: 650px;
+    height: 400px;
+    margin-right: 30px;
+}
+.side-images img {
+    width: 450px;
+    height: 188px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.destination-details {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.content {
+    width: 60%;
+}
+.price-box {
+    width: 30%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+.book-btn {
+    background-color: #f04c34;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.city-section {
+    background-color:black;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    
+}
+.cities-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.city-card {
+    width: 22%;
+    background-color:#333;
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+   
+}
+.city-card img {
+    width: 100%;
+}
+.footer {
+    background-color: #333;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}

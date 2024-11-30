@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Collage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header.img {
+            height: 50px;
+        }
+        .header.logo {
+            display: flex;
+            align-items: center;
+        }
+        .header.logo h1 {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .header nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        /* Masonry Grid Container */
+        .masonry-container {
+            column-count: 3;
+            column-gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        /* Masonry Grid Item */
+        .masonry-item {
+            background-color: black;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .masonry-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .masonry-container {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 600px) {
+            .masonry-container {
+                column-count: 1;
+            }
+        }
+        footer {  
+            background-color: #333;  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        .footer-content {  
+            margin-bottom: 10px;  
+        }  
+
+        .footer-content p {  
+            margin: 5px 0;  
+        }  
+
+        .footer-content a {  
+            color: #ffcc00; 
+            text-decoration: none;  
+        }  
+
+        .footer-content a:hover {  
+            text-decoration: underline;  
+        }  
+
+        .footer-bottom {  
+            font-size: 14px;  
+        }  
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"
+       <img alt="Journey Junction Logo" height="50" src="https://i.pinimg.com/236x/ab/0b/09/ab0b09c792b00a849ab5b0af5159d4b2.jpg" width="100"/>
+       <h1>
+        Journey Junction
+       </h1>
+       </div>
+       <nav>
+        <a href="finalHome.html">
+         Home
+        </a>
+        <a href="FinalDestinations.html">
+         Destination
+        </a>
+        <a href="ukdesd.html">
+         Destination_Details
+        </a>
+        <a href="#Contact">
+         Contact
+        </a>
+       </nav>
+      </div>
+
+    <div class="masonry-container">
+        <div class="masonry-item">
+        <a href=ukdesd.html>    <img src="https://cf2.bstatic.com/xdata/images/city/square250/684792.webp?k=acf89e7223e2f9dd4786bbfdcdd868706ff6c380ab3b14a2ef64f8a471998b50&o=" alt="Nainital"></a>
+            <div class="text-overlay">Nainital</div>
+        </div>
+        <div class="masonry-item">
+            <a href=ukdesd.html>  <img src="https://cf2.bstatic.com/xdata/images/city/square250/684732.webp?k=54bd15fa6a54076487fcca512f688f679d25b711afc6e4321904c1528dc5f731&o=" alt="Mussoorie"></a>
+            <div class="text-overlay">Mussoorie</div>
+        </div>
+        <div class="masonry-item">
+            <a href=ukdesd.html> <img src="https://cf2.bstatic.com/xdata/images/city/square250/684880.webp?k=e39b50ba8be4c6c6c413c963af6e0d452dbe0decaf72e13f9f798e65de549107&o=" alt="Rishikesh"></a>
+            <div class="text-overlay">Rishikesh</div>
+        </div>
+        <div class="masonry-item">
+            <a href=ukdesd.html> <img src="https://cf2.bstatic.com/xdata/images/city/square250/684611.webp?k=021e8bea3c47bb30693d0a24cb623899876546a60e8472d026fab5474fd75ed7&o=" alt="Dehradun"></a>
+            <div class="text-overlay">Dehradun</div>
+        </div>
+        <div class="masonry-item">
+            <a href=ukdesd.html>  <img src="https://cf2.bstatic.com/xdata/images/city/square250/948923.webp?k=5e6870021d67f9d9b1bb775aa03fd151d9fdd39bffed9e7cc1b411b545d4caa5&o=" alt="Bhimtal"></a>
+            <div class="text-overlay">Bhimtal</div>
+        </div>
+        <div class="masonry-item">
+            <a href=ukdesd.html> <img src="https://cf2.bstatic.com/xdata/images/city/square250/675968.webp?k=d2b89daa6092acc9b391ae1cb02ef0a675d6a5aed06e6402dfb48a3302995714&o=" alt="Almora"></a>
+            <div class="text-overlay">Almora</div>
+        </div>
+    </div>
+    <footer>  
+        <div id="Contact" class="footer-content">  
+            <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+            <p>Address: Gurgaon, Haryana, India</p>  
+            <p>Contact Info:  +91-7302122874 - Journey Junction</p>  
+            <p>🕒 Mon-Sun 24/7</p>  
+        </div>  
+        <div class="footer-bottom">  
+            <p>&copy; 2024 journey-junction. All Rights Reserved.</p>  
+        </div>  
+    </footer>  
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Image Gallery</title>    
+    <style>
+    body {  
+            margin: 0;  
+            font-family: Arial, sans-serif;  
+            background-color: #000;  
+            color: #fff;  
+        } 
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header.img {
+            height: 50px;
+        }
+        .header.logo {
+            display: flex;
+            align-items: center;
+        }
+        .header.logo h1 {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .header nav {
+            display:flex;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        } 
+
+        .gallery-container {  
+            text-align: center;  
+            padding: 20px;  
+        }  
+
+        h1 {  
+            font-size: 36px;  
+            margin-bottom: 20px;  
+            color: #ffcc00; 
+        }  
+
+        .gallery {  
+            display: grid;  
+            grid-template-columns: repeat(3, 1fr);  
+            gap: 10px;  
+        }  
+
+        .gallery img {  
+            width: 90%;  
+            height: 300px;
+            object-fit: cover; 
+            border-radius: 8px;  
+            transition: transform 0.3s;  
+        }  
+
+        .gallery img:hover {  
+            transform: scale(1.05);  
+        }  
+
+        footer {  
+            background-color: #333;  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        .footer-content {  
+            margin-bottom: 10px;  
+        }  
+
+        .footer-content p {  
+            margin: 5px 0;  
+        }  
+
+        .footer-content a {  
+            color: #ffcc00; 
+            text-decoration: none;  
+        }  
+
+        .footer-content a:hover {  
+            text-decoration: underline;  
+        }  
+
+        .footer-bottom {  
+            font-size: 14px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="header">
+        <div class="logo"
+       <img alt="Journey Junction Logo" height="50" src="https://i.pinimg.com/236x/ab/0b/09/ab0b09c792b00a849ab5b0af5159d4b2.jpg" width="100"/>
+       <h1 style="color: white;">
+        Journey Junction
+       </h1>
+       </div>
+       <nav>
+        <a href="#Home">
+         Home
+        </a>
+        <a href="#About">
+         About
+        </a>
+        <a href="#SERVICES">
+         Services
+        </a>
+        <a href="#Contact">
+         Contact
+        </a>
+       </nav>
+      </div>
+
+    <div class="gallery-container">  
+        <h1>DESTINATIONS</h1>  
+        <div class="gallery">  
+            <a href="goadestination.html"><img src="https://tse2.mm.bing.net/th?id=OIP.TtQj9Yxjc1A7MeU16guAxgHaFc&pid=Api&P=0&h=180" alt="Gallery Image 1"></a>  
+            <a href="shimla.html"><img src="https://i.pinimg.com/564x/f6/32/2a/f6322a7ce00a9ad7006b674ea5c82e61.jpg" alt="Gallery Image 2"></a>  
+            <a href="ladakhdestination.html"><img src="https://i.pinimg.com/236x/e3/22/34/e32234577da6c5af07beebcab6790378.jpg" alt="Gallery Image 3"></a> 
+            <a href="uttttt.html"><img src="https://i.pinimg.com/564x/d1/5f/e3/d15fe3ca29ec9b5d1af5fc836e1a1546.jpg" alt="Gallery Image 4"></a>  
+            <a href="kerala.html.html"><img src="https://i.pinimg.com/236x/6f/38/b1/6f38b10e88d0df51c09735ffa3f0a8af.jpg" alt="Gallery Image 5"></a> 
+            <a href="jk.html"><img src="https://i.pinimg.com/236x/17/45/f5/1745f523e5e4a628857a822589536654.jpg" alt="Gallery Image 6"></a>
+        </div>  
+        <a href="jk.html"> <button style="float: right;" >
+            next>>
+           </button></a>
+           <a href="red.html"> <button style="float: left;" >
+            Prev<<
+           </button></a>
+    </div> 
+     
+
+    <footer>  
+        <div class="footer-content">  
+            <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+            <p>Address: Gurgaon, Haryana, India</p>  
+            <p>Contact Info:  +91-7302122874 - Journey Junction</p>  
+            <p>🕒 Mon-Sun 24/7</p>  
+        </div>  
+        <div class="footer-bottom">  
+            <p>&copy; 2024 journey-junction. All Rights Reserved.</p>  
+        </div>  
+    </footer>  
+   
+</body>  
+</html>

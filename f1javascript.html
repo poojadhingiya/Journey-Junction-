@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Journey Junction
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header.img {
+            height: 50px;
+        }
+        .header.logo {
+            display: flex;
+            align-items: center;
+        }
+        .header.logo h1 {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .header nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .hero {
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .hero img {
+            width: 100%;
+            height: 800px;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0;  
+}  
+
+.container {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    padding: 10px;  
+    background-color: rgba(0, 0, 0, 0.833);  
+    color: white;  
+    
+}  
+
+.image-section img {  
+    width: 300px; 
+    height: 400px;  
+    border-radius: 8px;  
+    align-items: left;
+    
+}  
+ 
+.text-section {  
+    max-width: 500px;  
+    margin-left: 10%;  
+  
+}  
+
+.text-section h1 {  
+    font-size: 46px;  
+    margin: 10;  
+}  
+
+.underline {  
+    width: 50px;  
+    height: 4px;  
+    background-color: #f39c12; 
+    margin: 10px 0;  
+}  
+
+.text-section p {  
+    font-size: 16px;  
+    line-height: 1.5;  
+    background-color: #21609f; 
+    padding: 20px;  
+    border-radius: 15px;  
+}
+        .section {
+            padding: 40px 20px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .section .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .section .content .card {
+            background-color: #333;
+            color: white;
+            width: 20%;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section .content .card img {
+            width: 100%;
+            height: 300px;
+        }
+        .section .content .card button {
+            background-color: #ff6600;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .oval-section {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+        .oval-section.button {
+            background-color: #e15e06;
+            border:none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+           
+        }
+        .oval-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .oval-section .ovals {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .oval-section .ovals .oval {
+            background-color: #444;
+            width: 250px;
+            height: 300px;
+            border-radius: 80%;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .oval-section .ovals .oval img {
+            width: 100%;
+            height: auto;
+        }
+        .services {
+            background-color: #000;
+            color: white;
+            padding: 50px 20px;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .services .service-cards .service-card {
+            background-color: #333;
+            width: 20%;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .services .service-cards .service-card img {
+            width: 100%;
+            height: 300px;
+        }
+        footer {  
+    background-color: #0d0b0b;  
+    color: #fff;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.footer-content {  
+    margin-bottom: 0px;  
+    text-align: right;
+}  
+
+.footer-content p {  
+    margin: 5px 0;  
+}  
+
+.footer-content a {  
+    color: #ffcc00; 
+    text-decoration: none;  
+}   
+
+.footer-bottom {  
+    font-size: 14px;  
+}
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .footer .social-icons {
+            margin: 10px 0;
+        }
+        .footer .social-icons i {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .footer .links {
+            margin: 10px 0;
+        }
+        .footer .links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        #back-to-top {
+      display: none; 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    #back-to-top:hover {
+      background-color: #e5b800;
+    }
+   </style>
+ </head>
+ <body>
+  <div class="header">
+    <div class="logo"
+   <img alt="Journey Junction Logo" height="50" src="https://i.pinimg.com/236x/ab/0b/09/ab0b09c792b00a849ab5b0af5159d4b2.jpg" width="100"/>
+   <h1>
+    Journey Junction
+   </h1>
+   </div>
+   <nav>
+    <a href="#Home">
+     Home
+    </a>
+    <a href="#About">
+     About
+    </a>
+    <a href="#SERVICES">
+     Services
+    </a>
+    <a href="#Contact">
+     Contact
+    </a>
+   </nav>
+  </div>
+  <div class="hero">
+   <img alt="Beach with palm trees at sunset" height="600" src="https://i.pinimg.com/564x/19/a6/21/19a6212d923a4ed886ae14fffa361574.jpg" width="1200"/>
+   <div class="overlay">
+    <h1>
+     Plan Your Perfect Getaway
+    </h1>
+   <a href="#Explore"> <button>
+     Explore Now
+    </button></a>
+   </div>
+  </div>
+  <div class="container">  
+    <div class="image-section">  
+        <img src="https://i.pinimg.com/236x/02/3a/fd/023afd17b4436f3f4b23bfac04d2b467.jpg" alt="Travel Image">  
+    </div>    
+
+    <div id="About" class="text-section">  
+        <h1>About</h1> 
+        <h2>Experience the World
+            With Us!!</h2> 
+            <h3>The world is a book and those who do not travel
+                read only one page.</h3>
+        <div class="underline"></div>  
+        <p>Welcome to our travel guidance platform, where we curate the best destinations and must-see spots for your next journey. Whether it's suggesting top places to visit or cozy night stays, we are your ultimate trip companion.</p>  
+    </div>  
+</div>  
+  
+  <div class="section">
+   <h2>
+    Experience The World With Us
+   </h2>
+   <div class="content">
+    <div class="card">
+     <img alt="Mountain landscape" height="200" src="https://i.pinimg.com/236x/2c/c3/50/2cc350a95c808f03a591c96acdd49dcb.jpg" width="300"/>
+     <h3>
+      Adventure Awaits
+     </h3>
+     <p>
+      Discover the most breathtaking places on earth.
+     </p>
+     <button>
+      Learn More
+     </button>
+    </div>
+    <div class="card">
+     <img alt="Beach sunset" height="200" src="https://i.pinimg.com/564x/60/32/b0/6032b00ed155bf2d8bb2f3e8113ebe67.jpg" width="300"/>
+     <h3>
+      Relax and Unwind
+     </h3>
+     <p>
+      Find your perfect beach getaway.
+     </p>
+     <button>
+      Learn More
+     </button>
+    </div>
+    <div class="card">
+     <img alt="City skyline" height="200" src="https://i.pinimg.com/236x/6d/29/c0/6d29c00a8eb5eacbc1b0aa3b2ed98b89.jpg" width="300"/>
+     <h3>
+      Urban Exploration
+     </h3>
+     <p>
+      Experience the vibrant life of the world's greatest cities.
+     </p>
+     <button>
+      Learn More
+     </button>
+    </div>
+   </div>
+  </div>
+  <div id="Explore" class="oval-section">
+   <h2>
+    Search a best place in India
+   </h2>
+   <a href="destinations.html">
+   <button >
+    Explore all
+   </button>
+   </a>
+   <div class="ovals">
+    <div class="oval">
+     <img alt="Taj Mahal" height="200" src="https://i.pinimg.com/236x/23/7e/48/237e483332715f8e2225fd8a5ef7a08e.jpg" width="150"/>
+    </div>
+    <div class="oval">
+     <img alt="Kerala backwaters" height="200" src="https://i.pinimg.com/474x/08/1e/90/081e90489bb5173017c982b4f4d2643d.jpg" width="150"/>
+    </div>
+    <div class="oval">
+     <img alt="Goa beach" height="200" src="https://tse4.mm.bing.net/th?id=OIP.ZVWUGu4JVhj59LZq8NJdggHaJ3&pid=Api&P=0&h=180" width="150"/>
+    </div>
+    <div class="oval">
+     <img alt="Himalayan mountains" height="200" src="https://i.pinimg.com/236x/65/71/46/657146dc294a3c1e0abdbd72d89351d2.jpg" width="150"/>
+    </div>
+    <div class="oval">
+     <img alt="Rajasthan desert" height="200" src="https://i.pinimg.com/236x/f8/62/78/f86278093e826eff06eb8c7a5a28f94b.jpg" width="150"/>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    Unveiling India's Top Travel Hotspots
+   </h2>
+   <div class="content">
+    <div class="card">
+     <img alt="Kerala backwaters" height="200" src="https://i.pinimg.com/236x/33/88/74/338874ccba51c47c03096534be469d58.jpg" width="300"/>
+     <h3>
+      Kerala
+     </h3>
+     <p>
+      Explore the serene backwaters and lush landscapes.
+     </p>
+     <button>
+      Learn More
+     </button>
+    </div>
+    <div class="card">
+     <img alt="Goa beach" height="200" src="https://i.pinimg.com/474x/80/24/8b/80248b1f0b5d3cf19c65662b5a718eb9.jpg" width="300"/>
+     <h3>
+      Goa
+     </h3>
+     <p>
+      Enjoy the vibrant beach life and nightlife.
+     </p>
+     <button >
+      Learn More
+     </button>
+    </div>
+    <div class="card">
+     <img alt="Himalayan mountains" height="200" src="https://i.pinimg.com/564x/e8/77/db/e877db0ff76c1c66f9f0f7c18004a8a5.jpg" width="300"/>
+     <h3>
+      Himanchal
+     </h3>
+     <p>
+      Embark on an adventure in the majestic mountains.
+     </p>
+     <button>
+      Learn More
+     </button>
+    </div>
+   </div>
+  </div>
+  <div id="SERVICES" class="services">
+   <h2>
+    SERVICES
+   </h2>
+   <div class="service-cards">
+    <div class="service-card">
+     <img alt="Travel planning" height="200" src="https://i.pinimg.com/564x/f5/79/e4/f579e44e49ccc0c733b91c39df33b87f.jpg" width="300"/>
+     <h3>
+      Travel Planning
+     </h3>
+     <p>
+      Customized travel itineraries to suit your needs.
+     </p>
+    </div>
+    <div class="service-card">
+     <img alt="Accommodation booking" height="200" src="https://i.pinimg.com/474x/6d/0e/3a/6d0e3ac0335111f16761088900ba5849.jpg" width="300"/>
+     <h3>
+      Accommodation Booking
+     </h3>
+     <p>
+      Find the best places to stay at your destination.
+     </p>
+    </div>
+    <div class="service-card">
+     <img alt="Tour packages" height="200" src="https://i.pinimg.com/236x/5f/fd/72/5ffd7275d3f37e4762120bf288af823b.jpg" width="300"/>
+     <h3>
+      Tour Packages
+     </h3>
+     <p>
+      All-inclusive packages for a hassle-free experience.
+     </p>
+    </div>
+   </div>
+  </div>
+ 
+  <footer> 
+  <div class="footer">
+   <div class="social-icons">
+    <i class="fab fa-facebook-f">
+    </i>
+    <i class="fab fa-twitter">
+    </i>
+    <i class="fab fa-instagram">
+    </i>
+    <i class="fab fa-linkedin-in">
+    </i>
+   </div>
+   <div class="links">
+    <a href="#">
+     Privacy Policy
+    </a>
+    <a href="#SERVICE">
+     Terms of Service
+    </a>
+    <a href="#Contact">
+     Contact Us
+    </a>
+   </div>
+   <p>
+    © 2023 Journey Junction. All rights reserved.
+   </p>
+  </div>
+   
+    <div id="Contact"class="footer-content">  
+        <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+        <p>Address: Gurgaon, Haryana, India</p>  
+        <p>Contact Info: +91-7302122874 - Journey Junction</p>  
+        <p>🕒 Mon-Sun 24/7</p> 
+    </div>  
+    <div class="footer-bottom">  
+        <p>&copy; 2024 journey-junction. All Rights Reserved.</p>  
+    </div>  
+</footer>
+<button id="back-to-top">↑</button>
+
+  <script>
+    
+    const backToTopButton = document.getElementById("back-to-top");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>  
+ </body>
+</html>

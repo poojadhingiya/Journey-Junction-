@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-areas: 
+        "gulmarg gulmarg aru-valley"
+        "gurez-valley pahalgam betaab-valley";
+    gap: 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+
+.image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.gulmarg {
+    background-image: url(maxresdefault\ \(1\).jpg);
+    grid-area: gulmarg;
+    height: 400px;
+}
+
+.aru-valley {
+    background-image: url(Aru-Valley.jpg);
+    grid-area: aru-valley;
+    height: 400px;
+    
+    
+}
+
+.pahalgam {
+    background-image: url(kashmir-banner-3.png);
+    grid-area: pahalgam;
+    height: 200px;
+}
+
+.gurez-valley {
+    background-image: url(maxresdefault.jpg);
+    grid-area: gurez-valley;
+    height: 200px;
+}
+
+.betaab-valley {
+    background-image: url(Betaab-Valley.jpg);
+    grid-area: betaab-valley;
+    height: 200px ;
+    max-height: 300px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .collage-container {
+        grid-template-areas: 
+            "gulmarg"
+            "aru-valley"
+            "gurez-valley"
+            "pahalgam"
+            "betaab-valley";
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .gulmarg {
+        height: 300px;
+    }
+}

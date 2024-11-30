@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Collage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .header.img {
+            height: 50px;
+        }
+        .header.logo {
+            display: flex;
+            align-items: center;
+        }
+        .header.logo h1 {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .header nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        /* Masonry Grid Container */
+        .masonry-container {
+            column-count: 3;
+            column-gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        /* Masonry Grid Item */
+        .masonry-item {
+            background-color: black;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .masonry-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .masonry-container {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 600px) {
+            .masonry-container {
+                column-count: 1;
+            }
+        }
+        footer {  
+            background-color: #333;  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        .footer-content {  
+            margin-bottom: 10px;  
+        }  
+
+        .footer-content p {  
+            margin: 5px 0;  
+        }  
+
+        .footer-content a {  
+            color: #ffcc00; 
+            text-decoration: none;  
+        }  
+
+        .footer-content a:hover {  
+            text-decoration: underline;  
+        }  
+
+        .footer-bottom {  
+            font-size: 14px;  
+        }  
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+       <h1>
+        Journey Junction
+       </h1>
+       </div>
+       <nav>
+        <a href="finalHome.html">
+         Home
+        </a>
+        <a href="FinalDestinations.html">
+         Destinations
+        </a>
+        <a href="white.html">
+         Destination_Details
+        </a>
+        <a href="#Contact">
+         Contact
+        </a>
+       </nav>
+      </div>
+
+      <div class="masonry-container">
+        <div class="masonry-item">
+            <img src="gulmurg.jpg" alt="Gulmarg">
+            <div class="text-overlay">Gulmarg</div>
+        </div>
+        <div class="masonry-item">
+            <img src="Aru-Valley.jpg" alt="Aru Valley">
+            <div class="text-overlay">Aru Valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://wallpapercave.com/wp/wp9433338.jpg" alt="Pahalgam">
+            <div class="text-overlay">Pahalgam</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.SFEVQadAtADaV1m0IxzXBgHaEO&pid=Api&P=0&h=180" alt="gurez-valley">
+            <div class="text-overlay">Gurez-valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="Betaab-Valley.jpg" alt="Betaab-Valley">
+            <div class="text-overlay">Betaab-Valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.2NoYYRYwzAoH-uSPX4yVwwHaEE&pid=Api&P=0&h=180" alt="Dal Lake">
+            <div class="text-overlay">Dal Lake</div>
+        </div>
+        <a href="white.html">
+            <button style="float: right;">next>></button>
+        </a>
+        <a href="FinalDestinations.html">
+            <button style="float: left;">Prev<<</button>
+        </a>
+        </div>
+    <footer>  
+        <div  id =contact class="footer-content">  
+            <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+            <p>Address: Gurgaon, Haryana, India</p>  
+            <p>Contact Info:  +91-7302122874 - Journey Junction</p>  
+            <p>🕒 Mon-Sun 24/7</p>  
+        </div>  
+        <div class="footer-bottom">  
+            <p>&copy; 2024 journey-junction. All Rights Reserved.</p>  
+        </div>  
+    </footer>  
+
+</body>
+</html>

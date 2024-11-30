@@ -1,0 +1,20 @@
+{
+    "services": [
+      {
+        "title": "Travel Planning",
+        "description": "Customized travel itineraries to suit your needs.",
+        "image": "https://i.pinimg.com/564x/f5/79/e4/f579e44e49ccc0c733b91c39df33b87f.jpg"
+      },
+      {
+        "title": "Accommodation Booking",
+        "description": "Find the best places to stay at your destination.",
+        "image": "https://i.pinimg.com/474x/6d/0e/3a/6d0e3ac0335111f16761088900ba5849.jpg"
+      },
+      {
+        "title": "Tour Packages",
+        "description": "All-inclusive packages for a hassle-free experience.",
+        "image": "https://i.pinimg.com/236x/5f/fd/72/5ffd7275d3f37e4762120bf288af823b.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,207 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Kashmir Valley Collage</title>  
+
+    <style>  
+     body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+        }
+        .header {
+            background-color: #1a1a1a;
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }  
+
+        .header {  
+            background-color: #333;  
+            color: white;  
+            text-align: center;  
+            padding: 15px 0;  
+        }  
+
+        .header nav {  
+            display: flex;  
+            justify-content: center;  
+            gap: 10px;
+        }    
+
+        .header a {  
+            color: white;  
+            text-decoration: none;  
+            padding: 10px 0px;  
+            transition: background 0.3s;  
+        }  
+
+        .header a:hover {  
+            background-color: #555;  
+        }  
+
+        .footer {  
+            background-color: #333;  
+            color: white;  
+            text-align: center;  
+            padding: 15px 0;  
+        }  
+
+        .collage-container {  
+            display: grid;  
+            grid-template-areas:  
+                "gulmarg gulmarg aru-valley"  
+                "gurez-valley pahalgam betaab-valley";  
+            gap: 10px;  
+            max-width: 1200px;  
+            margin: 50px auto;  
+            background-color: black;
+        }  
+
+        
+        .image {  
+            position: relative;  
+            background-size: cover;  
+            background-position: center;  
+        }  
+
+        .gulmarg {  
+
+
+            background-image: url(gulmurg.jpg);  
+            grid-area: gulmarg;  
+            height: 400px;  
+        }  
+
+        .aru-valley {  
+            background-image: url(Aru-Valley.jpg);  
+            grid-area: aru-valley;  
+            height: 400px;
+            padding-left: 100px;  
+        }  
+
+        .pahalgam {  
+            background-image: url(kashmir-banner-3.png);  
+            grid-area: pahalgam; 
+            height:200px; 
+            padding-top: 50px;
+        
+        }  
+
+        .gurez-valley {  
+            background-image: url(maxresdefault.jpg);  
+            grid-area: gurez-valley;  
+            height: 200px;  
+            padding-top: 50px;
+        }  
+
+        .betaab-valley {  
+            background-image: url(Betaab-Valley.jpg);  
+            grid-area: betaab-valley;  
+            height: 200px;  
+            max-height: 300px; 
+            padding-top: 50px; 
+        }  
+
+        .caption {  
+            position: absolute;  
+            bottom: 10px;  
+            left: 20px;  
+            font-size: 24px;  
+            font-weight: bold;  
+            color: white;  
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+        }  
+
+        a {  
+            display: block;  
+            width: 100%;  
+            height: 100%;  
+            text-decoration: none;  
+        }  
+
+      
+        @media (max-width: 768px) {  
+            .collage-container {  
+                grid-template-areas:  
+                    "gulmarg"  
+                    "aru-valley"  
+                    "gurez-valley"  
+                    "pahalgam"  
+                    "betaab-valley";  
+            }  
+
+            .image {  
+                height: 200px;  
+            }  
+
+            .gulmarg {  
+                height: 300px;  
+            }  
+        }  
+    </style>  
+</head>  
+
+<body>  
+    <div class="header">  
+        
+        <nav>  
+            <a href="f1.html">Home</a>  
+            <a href="destinations.html">Destinations</a>  
+            <a href="#Contact">Contact</a>  
+            <a href="destination details.html">Destination_Details</a>  
+        </nav>  
+        
+    </div>  
+
+    <div class="collage-container">  
+       
+        <div class="image gulmarg">  
+            <a href="gulmarg.html">  
+                <div class="caption">GULMARG</div>  
+            </a>  
+        </div>  
+  
+        <div class="image aru-valley">  
+            <a href="aru-valley.html">  
+                <div class="caption">Aru Valley</div>  
+            </a>  
+        </div>  
+
+       
+        <div class="image pahalgam">  
+            <a href="pahalgam.html">  
+                <div class="caption">Pahalgam</div>  
+            </a>  
+        </div>  
+
+      
+        <div class="image gurez-valley">  
+            <a href="gurez-valley.html">  
+                <div class="caption">Gurez Valley</div>  
+            </a>  
+        </div>  
+
+        
+        <div class="image betaab-valley">  
+            <a href="betaab-valley.html">  
+                <div class="caption">Betaab Valley</div>  
+            </a>  
+        </div>  
+    </div>  
+
+    <div id="Contact" class="footer">  
+        <p>&copy; 2023 Kashmir Valley Collage. All rights reserved.</p>  
+        <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+        <p>Address: Gurgaon, Haryana, India</p>  
+        <p>Contact Info: 📞 +91-7302122874 - Journey Junction</p>  
+        <p>🕒 Mon-Sun 24/7</p> 
+    </div>  
+</body>  
+
+</html>

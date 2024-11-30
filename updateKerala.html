@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Collage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header.img {
+            height: 50px;
+        }
+        .header.logo {
+            display: flex;
+            align-items: center;
+        }
+        .header.logo h1 {
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        .header nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        /* Masonry Grid Container */
+        .masonry-container {
+            column-count: 3;
+            column-gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        /* Masonry Grid Item */
+        .masonry-item {
+            background-color: black;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .masonry-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .masonry-container {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 600px) {
+            .masonry-container {
+                column-count: 1;
+            }
+        }
+        footer {  
+            background-color: #333;  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        .footer-content {  
+            margin-bottom: 10px;  
+        }  
+
+        .footer-content p {  
+            margin: 5px 0;  
+        }  
+
+        .footer-content a {  
+            color: #ffcc00; 
+            text-decoration: none;  
+        }  
+
+        .footer-content a:hover {  
+            text-decoration: underline;  
+        }  
+
+        .footer-bottom {  
+            font-size: 14px;  
+        }  
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"
+       <img alt="Journey Junction Logo" height="50" src="https://i.pinimg.com/236x/ab/0b/09/ab0b09c792b00a849ab5b0af5159d4b2.jpg" width="100"/>
+       <h1>
+        Journey Junction
+       </h1>
+       </div>
+       <nav>
+        <a href="#Home">
+         Home
+        </a>
+        <a href="#About">
+         About
+        </a>
+        <a href="#SERVICES">
+         Services
+        </a>
+        <a href="#Contact">
+         Contact
+        </a>
+        <a href="white.html"> Destination_Details</a>
+       </nav>
+      </div>
+
+    <div class="masonry-container">
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/5d/df/27/at-kovalam-beach.jpg?w=500&h=400&s=1" alt="Kovalam Beach">
+            <div class="text-overlay">Kovalam Beach</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/61/e4/42/the-shops-beside-the.jpg?w=500&h=400&s=1" alt="Jew Town">
+            <div class="text-overlay">Jew Town</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/17/1c/49/anthropology-and-ethnography.jpg?w=500&h=400&s=1" alt="Folklore Museum">
+            <div class="text-overlay">Folklore Museum</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f3/1b/4a/alleppey-backwater-cruise.jpg?w=500&h=400&s=1" alt="Alleppey Backwaters">
+            <div class="text-overlay">Alleppey Backwaters</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/07/49/fd/beauty-at-its-bestin.jpg?w=500&h=400&s=1" alt="Athirappilly Falls">
+            <div class="text-overlay">Athirappilly Falls</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/06/e5/68/20160916-072404-largejpg.jpg?w=500&h=400&s=1" alt="Poovar Island">
+            <div class="text-overlay">Poovar Island</div>
+        </div>
+    </div>
+    <footer>  
+        <div class="footer-content">  
+            <p>Email: <a href="mailto:mehtanrashmi26@gmail.com">mehtanrashmi26@gmail.com</a></p>  
+            <p>Address: Gurgaon, Haryana, India</p>  
+            <p>Contact Info:  +91-7302122874 - Journey Junction</p>  
+            <p>🕒 Mon-Sun 24/7</p>  
+        </div>  
+        <div class="footer-bottom">  
+            <p>&copy; 2024 journey-junction. All Rights Reserved.</p>  
+        </div>  
+    </footer>  
+
+</body>
+</html>

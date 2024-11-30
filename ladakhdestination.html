@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Collage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            display: inline;
+            font-size: 24px;
+            margin: 0;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Masonry Grid Container */
+        .masonry-container {
+            column-count: 3;
+            column-gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        /* Masonry Grid Item */
+        .masonry-item {
+            background-color: #fff;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .masonry-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .masonry-container {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 600px) {
+            .masonry-container {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img alt="Journey Junction Logo" src="https://i.pinimg.com/236x/ab/0b/09/ab0b09c792b00a849ab5b0af5159d4b2.jpg" />
+            <h1>Journey Junction</h1>
+        </div>
+        <nav>
+            <a href="finalHome.html">Home</a>
+            <a href="finalHome.html">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="masonry-container">
+        <div class="masonry-item">
+            <img src="https://cdn.getyourguide.com/img/tour/419024d8f4b32b809793bf85b6a0767783ae225557a47796b27bcf4b5e6ba787.jpg/132.webp" alt="Sonamarg">
+            <div class="text-overlay">Sonamarg</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://cdn.getyourguide.com/img/tour/5bd341be3273edd1bb5036cdec64b23f1bf488a68d16b820da493bc0fb7e1572.jpeg/132.webp" alt="Nubra Valley">
+            <div class="text-overlay">Nubra Valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://cdn.getyourguide.com/img/tour/89480f9efc7aa8c1221b7db2ce92f8d10a203fcbe418e47a42ce0bb23b8a9b9e.jpeg/132.webp" alt="Sham Valley">
+            <div class="text-overlay">Sham Valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://cdn.getyourguide.com/img/tour/15e4fd78cdcce7365ce8baa46e820ecc73fc686668f42f6d4a8fdac0d2bd7dd1.jpeg/132.webp" alt="Spituk Monastery">
+            <div class="text-overlay">Spituk Monastery</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://cdn.getyourguide.com/img/tour/6015f3cca4f0049b37231b080e5bcc2d296327737ecb7b674b4d757fb23d6cd0.jpg/132.webp" alt="Warwan Valley">
+            <div class="text-overlay">Warwan Valley</div>
+        </div>
+        <div class="masonry-item">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/2999_20190305160539.jpg" alt="Hemis">
+            <div class="text-overlay">Hemis</div>
+            <a href="ladakh.html">
+                <button style="float: right;">next>></button>
+            </a>
+            <a href="FinalDestinations.html">
+                <button style="float: left;">Prev<<</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
