@@ -27,7 +27,6 @@
             font-size: 50px;
             margin: 0;
         }
-        
         .thank-you {
             margin: 50px auto;
             text-align: center;
@@ -69,7 +68,6 @@
             font-size: 24px;
             margin-top: 30px;
         }
-        
         .button-container {
             margin-top: 30px;
         }
@@ -81,6 +79,8 @@
             font-size: 18px;
             border-radius: 5px;
             margin: 0 10px;
+            border: none;
+            cursor: pointer;
         }
         .footer {
             background-color: #f1f1f1;
@@ -145,13 +145,13 @@
         </div>
 
         <div class="review-title">
-            <h4>Review title</h4>
-            <textarea rows="5" cols="50" placeholder="Write your review here..."></textarea>
+            <h4>Write Your Review</h4>
+            <textarea id="reviewText" rows="5" cols="50" placeholder="Write your review here..."></textarea>
         </div>
 
         <div class="button-container">
-            <a href="f1.html" class="button">Back Home</a>
-            <a href="#" class="button">submit</a>
+            <a href="/" class="button">Back Home</a>
+            <button id="submitReview" class="button">Submit</button>
         </div>
     </div>
 
@@ -175,10 +175,47 @@
             <ul>
                 <li>Resources</li>
                 <li>Blog</li>
-                <li>Contact:7302122874</li>
+                <li>Contact: 7302122874</li>
             </ul>
         </div>
     </div>
 
+    <script>
+        // Event listener for the Submit button
+        document.getElementById('submitReview').addEventListener('click', async () => {
+            const reviewText = document.getElementById('reviewText').value;
+            const bookingId = "123456789"; // Replace with dynamic booking ID if needed
+            const reviewTitle = "User Review"; // Adjust this title dynamically if required
+
+            if (!reviewText) {
+                alert('Please write a review before submitting.');
+                return;
+            }
+
+            try {
+                const response = await fetch('/submitReview', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ bookingId, reviewTitle, reviewText })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('Review submitted successfully!');
+                    document.getElementById('reviewText').value = ""; // Clear the textarea
+                } else {
+                    alert('Error: ' + result.message);
+                }
+            } catch (error) {
+                alert('An error occurred while submitting the review.');
+                console.error(error);
+            }
+        });
+    </script>
+
 </body>
 </html>
+
